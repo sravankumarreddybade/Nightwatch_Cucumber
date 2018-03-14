@@ -1,0 +1,43 @@
+{
+  "name": "nightwatch_cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.conf.js",
+  "scripts": {
+    "e2e-test": "nightwatch",
+    "e2e-test:chrome": "npm run e2e-test -- --env chrome",
+    "e2e-test:firefox": "npm run e2e-test -- --env firefox",
+    "e2e-report": "node create-html-report.js",
+    "e2etag:chrome": "./node_modules/.bin/nightwatch --env chrome --tag",
+    "e2etag:firefox": "./node_modules/.bin/nightwatch --env chrome --tag",
+    "e2etag:phantom": "./node_modules/.bin/nightwatch --env --tag",
+    "debug": "node --inspect-brk node_modules/.bin/nightwatch --env chrome"
+  },
+  "author": "Sravan Kumar Reddy",
+  "dependencies": {},
+  "devDependencies": {
+    "chromedriver": "^2.32.3",
+    "cucumber": "^2.3.1",
+    "cucumber-html-reporter": "^2.0.3",
+    "cucumber-pretty": "^0.0.5",
+    "geckodriver": "^1.8.1",
+    "iedriver": "^3.0.0",
+    "nightwatch": "^0.9.16",
+    "nightwatch-cucumber": "^7.3.1",
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.14",
+    "selenium-server": "^3.4.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sravankumarreddybade/Nightwatch_Cucumber.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sravankumarreddybade/Nightwatch_Cucumber/issues"
+  },
+  "homepage": "https://github.com/sravankumarreddybade/Nightwatch_Cucumber#readme"
+}
